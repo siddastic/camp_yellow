@@ -1,4 +1,4 @@
-Demo APK - https://github.com/siddastic/camp_yellow/releases/tag/release
+Demo APK - https://github.com/siddastic/camp_yellow/releases/tag/v2
 
 Screenshots :
 <br/><br/>
