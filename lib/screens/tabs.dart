@@ -1,3 +1,4 @@
+import 'package:cy_assignment/data/fake_data.dart';
 import 'package:cy_assignment/screens/home_tab.dart';
 import 'package:cy_assignment/widgets/touchable_opacity.dart';
 import "package:flutter/material.dart";
@@ -37,7 +38,7 @@ class _TabScreenState extends State<TabScreen> {
               Expanded(
                 child: _BottomNavIcon(
                   isSelected: _selectedTabIndex == i,
-                  icon: const Icon(Icons.home),
+                  icon: FakeData.tab_icons[i],
                   onTap: () => setState(() => _selectedTabIndex = i),
                 ),
               ),

@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 
 class TouchableOpacity extends StatefulWidget {
@@ -30,9 +32,9 @@ class _TouchableOpacityState extends State<TouchableOpacity> {
       onTapCancel: () => setState(() => isDown = false),
       onTap: widget.onTap as void Function()?,
       child: AnimatedOpacity(
-        child: widget.child,
         duration: widget.duration,
         opacity: isDown ? widget.opacity : 1,
+        child: widget.child,
       ),
     );
   }
